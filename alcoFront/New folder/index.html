@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Graph Library-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="bloodAlc.js"></script>
+</head>
+<body>
+    <div id="user_input">
+        <label>
+            <input type="radio" name="genderBtn" value="male"> male
+        </label>
+
+        <label>
+            <input type="radio" name="genderBtn" value="female"> female
+        </label>
+
+        <br>
+        <input type="text" name="bodyWeight" id="bodyWeight" maxlength="18" size="8" placeholder="Put in your weight"> KG
+
+        <br>
+
+        <button onclick="getAlc()">
+            <span>How<br>Drunk am I?</span>
+        </button>
+
+        <h2 id="alc_percentage_display"></h2>
+
+    </div>
+
+    <div id="drinks">
+        <label>
+            Soju Shot <input type="text" name="sojuShot" id="sojuShot" maxlength="18" size="8" placeholder="How many?">
+        </label>
+        <br>
+        <label>
+            Beer bottle <input type="text" name="beerBottle" id="beerBottle" maxlength="18" size="8" placeholder="How many?">
+        </label>
+    </div>
+    
+    
+    <canvas id="BAC_chart"></canvas>
+    
+
+</body>
+</html>
