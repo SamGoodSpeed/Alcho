@@ -93,7 +93,7 @@ function App() {
         </div>
       </nav>
       <main className="container mx-auto px-5 gap-5 flex flex-col">
-        <header className="mb-10 md:flex md:items-start">
+        <header className="mb-0 md:flex md:items-start">
           <div className="flex-auto max-w-4xl">
             <p className="mb-0 text-sm leading-6 font-semibold text-sky-500 dark:text-sky-400 md:mb-4">
               FredisCool
@@ -153,21 +153,22 @@ function App() {
         </section>
 
         <section id="selction">
-          <div className="w-full h-full bg-slate-500 grid grid-cols-3 rounded-lg text-white p-5">
-            <div className="flex flex-col justify-center items-center gap-1 mx-3 my-2  bg-blue-400 rounded-lg">
+          <div className="w-full h-[100px] grid grid-cols-3 rounded-lg text-white gap-2">
+            <div className="h-full">
               <p>Beer</p>
-              <img src="../src/img/icons/beer.png" alt="" className="w-10" />
-              <span className="text-sm font-bold">5+</span>
+              <div className="flex flex-col justify-center items-center gap-1  bg-blue-400 rounded-lg">
+                <img src="../src/img/icons/beer.png" alt="" className="w-10" />
+              </div>
             </div>
-            <div className="flex flex-col justify-center items-center gap-1 mx-3 my-2  bg-blue-400 rounded-lg">
-              <p>Beer</p>
-              <img src="../src/img/icons/beer.png" alt="" className="w-10" />
-              <span className="text-sm font-bold">5+</span>
+            <div className="flex flex-col justify-center items-center gap-1  bg-blue-400 rounded-lg">
+              <img src="../src/img/icons/soju.png" alt="" className="w-10" />
             </div>
-            <div className="flex flex-col justify-center items-center gap-1 mx-3 my-2  bg-blue-400 rounded-lg">
-              <p>Beer</p>
-              <img src="../src/img/icons/beer.png" alt="" className="w-10" />
-              <span className="text-sm font-bold">5+</span>
+            <div className="flex flex-col justify-center items-center    bg-blue-400 rounded-lg">
+              <img
+                src="../src/img/icons/soju-bottle.png"
+                alt=""
+                className="w-10"
+              />
             </div>
           </div>
         </section>
